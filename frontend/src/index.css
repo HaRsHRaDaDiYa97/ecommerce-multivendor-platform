@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+
+/* Montserrat font via npm */
+@import "@fontsource/montserrat/400.css"; /* Regular */
+@import "@fontsource/montserrat/500.css"; /* Medium */
+@import "@fontsource/montserrat/600.css"; /* SemiBold */
+@import "@fontsource/montserrat/700.css"; /* Bold */
+
+/* Apply globally to body and override Tailwind font-sans */
+body, .font-sans {
+  font-family: "Montserrat", ui-sans-serif, system-ui !important;
+}
