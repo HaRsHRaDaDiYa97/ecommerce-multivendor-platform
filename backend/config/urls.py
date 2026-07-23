@@ -2,8 +2,16 @@ from django.contrib import admin
 from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
+from django.http import JsonResponse
+
+def root_view(request):
+    return JsonResponse({
+        "status": "healthy",
+        "message": "Multi-Vendor E-Commerce REST API is live!"
+    })
 
 urlpatterns = [
+    path('', root_view),
     path('admin/', admin.site.urls),
     # Routes for apps
     path('api/users/', include('users.urls')), 
