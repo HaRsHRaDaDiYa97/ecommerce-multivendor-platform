@@ -38,17 +38,17 @@ jobs:
   # 2. Frontend Build Verification Job
   # ------------------------------------------------------------------
   build-frontend:
-    name: ⚛️ Build React Frontend
+    name: ⚛️ Build & Lint React Frontend
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout Code
         uses: actions/checkout@v4
 
-      - name: Set up Node.js 20
+      - name: Set up Node.js 22
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: '22'
           cache: 'npm'
           cache-dependency-path: frontend/package-lock.json
 
@@ -56,6 +56,11 @@ jobs:
         run: |
           cd frontend
           npm ci || npm install
+
+      - name: Run ESLint Code Audit
+        run: |
+          cd frontend
+          npm run lint || true
 
       - name: Build Frontend Production Asset
         run: |
@@ -69,7 +74,7 @@ jobs:
     name: 🚀 Deploy Frontend to Vercel
     needs: [test-backend, build-frontend]
     runs-on: ubuntu-latest
-    if: github.event_name == 'push' && (github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master')
+    if: github.event_name == 'push' && secrets.VERCEL_TOKEN != '' && (github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master')
 
     steps:
       - name: Checkout Code
