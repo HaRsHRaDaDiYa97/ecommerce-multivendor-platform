@@ -60,7 +60,7 @@ jobs:
       - name: Run ESLint Code Audit
         run: |
           cd frontend
-          npm run lint || true
+          npm run lint
 
       - name: Build Frontend Production Asset
         run: |
@@ -74,14 +74,17 @@ jobs:
     name: 🚀 Deploy Frontend to Vercel
     needs: [test-backend, build-frontend]
     runs-on: ubuntu-latest
-    if: github.event_name == 'push' && secrets.VERCEL_TOKEN != '' && (github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master')
+    if: github.event_name == 'push' && (github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master')
 
     steps:
       - name: Checkout Code
         uses: actions/checkout@v4
 
       - name: Deploy to Vercel Action
+        if: ${{ env.VERCEL_TOKEN != '' }}
         uses: amondnet/vercel-action@v25
+        env:
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
         with:
           vercel-token: ${{ secrets.VERCEL_TOKEN }}
           vercel-org-id: ${{ secrets.VERCEL_ORG_ID }}
