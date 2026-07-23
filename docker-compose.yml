@@ -1,0 +1,79 @@
+version: '3.8'
+
+services:
+  # ----------------------------------------------------
+  # 1. PostgreSQL Database Service
+  # ----------------------------------------------------
+  db:
+    image: postgres:16-alpine
+    container_name: ecommerce_db
+    restart: always
+    environment:
+      POSTGRES_DB: ${DB_NAME:-ecommerce_multi_vendor}
+      POSTGRES_USER: ${DB_USER:-postgres}
+      POSTGRES_PASSWORD: ${DB_PASSWORD:-postgres_secure_pass}
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${DB_USER:-postgres}"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  # ----------------------------------------------------
+  # 2. Django REST Framework Backend Service
+  # ----------------------------------------------------
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: ecommerce_backend
+    restart: always
+    environment:
+      - DB_HOST=db
+      - DB_PORT=5432
+      - DB_NAME=${DB_NAME:-ecommerce_multi_vendor}
+      - DB_USER=${DB_USER:-postgres}
+      - DB_PASSWORD=${DB_PASSWORD:-postgres_secure_pass}
+      - SECRET_KEY=${SECRET_KEY:-django-insecure-docker-secret-key-change-in-production}
+      - DEBUG=${DEBUG:-True}
+      - RAZORPAY_KEY_ID=${RAZORPAY_KEY_ID:-rzp_test_RECMjyRF0o9vji}
+      - RAZORPAY_KEY_SECRET=${RAZORPAY_KEY_SECRET:-jFDmkf1cc1mMBtdZwqUUPLDe}
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./backend:/app
+      - media_data:/app/media
+    depends_on:
+      db:
+        condition: service_healthy
+
+  # ----------------------------------------------------
+  # 3. React Vite Frontend Service
+  # ----------------------------------------------------
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: ecommerce_frontend
+    restart: always
+    environment:
+      - VITE_API_BASE_URL=http://localhost:8000/api/
+    ports:
+      - "5173:5173"
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules
+    depends_on:
+      - backend
+
+# ----------------------------------------------------
+# Persistent Volumes
+# ----------------------------------------------------
+volumes:
+  postgres_data:
+    driver: local
+  media_data:
+    driver: local

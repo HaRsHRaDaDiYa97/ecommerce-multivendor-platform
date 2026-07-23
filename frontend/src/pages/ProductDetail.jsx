@@ -54,7 +54,7 @@ export default function ProductDetail() {
 
     // 3. Fetch Wishlist (Independent, can stay outside)
     if (isAuthenticated) {
-      privateApi.get("/wishlist/")
+      privateApi.get("wishlist/")
         .then(res => {
           const exists = res.data.some(item => item.product.id === Number(id));
           setIsWishlisted(exists);
@@ -77,10 +77,10 @@ export default function ProductDetail() {
   const handleWishlist = async () => {
     try {
       if (!isWishlisted) {
-        await privateApi.post("/wishlist/add/", { product_id: product.id });
+        await privateApi.post("wishlist/add/", { product_id: product.id });
         setIsWishlisted(true);
       } else {
-        await privateApi.delete(`/wishlist/remove/${product.id}/`);
+        await privateApi.delete(`wishlist/remove/${product.id}/`);
         setIsWishlisted(false);
       }
     } catch (err) {

@@ -10,7 +10,7 @@ export default function AdminUsers() {
 
   const fetchUsers = async () => {
     try {
-      const res = await api.get("/users/admin/users/");
+      const res = await api.get("users/admin/users/");
       setUsers(res.data);
     } catch (error) {
       console.error("Failed to load users", error);
@@ -27,7 +27,7 @@ export default function AdminUsers() {
   const deleteUser = async (id) => {
     if (!window.confirm("Are you sure you want to delete this user?")) return;
     try {
-      await api.delete(`/users/admin/users/delete/${id}/`);
+      await api.delete(`users/admin/users/delete/${id}/`);
       toast.success("User removed");
       fetchUsers();
     } catch (error) {

@@ -69,7 +69,7 @@ export default function SellerStoreSettings() {
   const handleCreateStore = async () => {
     try {
       setLoading(true);
-      await privateApi.post("/stores/create/", { name: "My Store" });
+      await privateApi.post("stores/create/", { name: "My Store" });
       await loadStore();
     } catch (err) {
       console.error("Create store error:", err);

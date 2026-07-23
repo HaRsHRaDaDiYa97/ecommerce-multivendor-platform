@@ -10,7 +10,7 @@ export default function AdminSellers() {
 
   const fetchSellers = async () => {
     try {
-      const res = await api.get("/users/admin/sellers/");
+      const res = await api.get("users/admin/sellers/");
       setSellers(res.data);
     } catch (error) {
       console.error("Failed to load sellers", error);
@@ -29,7 +29,7 @@ export default function AdminSellers() {
     if (!window.confirm(`Are you sure you want to ${action} this seller?`)) return;
 
     try {
-      await api.post(`/users/admin/sellers/${action}/${id}/`);
+      await api.post(`users/admin/sellers/${action}/${id}/`);
       toast.success(`Seller ${isActive ? "disabled" : "enabled"} successfully`);
       fetchSellers();
     } catch (error) {

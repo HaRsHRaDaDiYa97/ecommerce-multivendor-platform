@@ -1,0 +1,1687 @@
+[
+{
+  "model": "products.tag",
+  "pk": 3,
+  "fields": {
+    "name": "Top Trending",
+    "slug": "top-trending",
+    "is_active": true
+  }
+},
+{
+  "model": "products.tag",
+  "pk": 4,
+  "fields": {
+    "name": "Best Sellers",
+    "slug": "best-sellers",
+    "is_active": true
+  }
+},
+{
+  "model": "products.tag",
+  "pk": 5,
+  "fields": {
+    "name": "New Arrivals",
+    "slug": "new-arrivals",
+    "is_active": true
+  }
+},
+{
+  "model": "products.tag",
+  "pk": 6,
+  "fields": {
+    "name": "Festival Deals",
+    "slug": "festival-deals",
+    "is_active": true
+  }
+},
+{
+  "model": "products.tag",
+  "pk": 7,
+  "fields": {
+    "name": "Summer Special",
+    "slug": "summer-special",
+    "is_active": true
+  }
+},
+{
+  "model": "products.category",
+  "pk": 8,
+  "fields": {
+    "name": "Electronics",
+    "slug": "electronics",
+    "description": "",
+    "parent": null
+  }
+},
+{
+  "model": "products.category",
+  "pk": 9,
+  "fields": {
+    "name": "Home & Kitchen",
+    "slug": "home-kitchen",
+    "description": "",
+    "parent": null
+  }
+},
+{
+  "model": "products.category",
+  "pk": 10,
+  "fields": {
+    "name": "Mobiles",
+    "slug": "mobiles",
+    "description": "",
+    "parent": 8
+  }
+},
+{
+  "model": "products.category",
+  "pk": 11,
+  "fields": {
+    "name": "Laptops",
+    "slug": "laptops",
+    "description": "",
+    "parent": 8
+  }
+},
+{
+  "model": "products.category",
+  "pk": 12,
+  "fields": {
+    "name": "Headphones",
+    "slug": "headphones",
+    "description": "",
+    "parent": 8
+  }
+},
+{
+  "model": "products.category",
+  "pk": 13,
+  "fields": {
+    "name": "Fashion",
+    "slug": "fashion",
+    "description": "",
+    "parent": null
+  }
+},
+{
+  "model": "products.category",
+  "pk": 14,
+  "fields": {
+    "name": "Men Clothing",
+    "slug": "men-clothing",
+    "description": "",
+    "parent": 13
+  }
+},
+{
+  "model": "products.category",
+  "pk": 15,
+  "fields": {
+    "name": "Women Clothing",
+    "slug": "women-clothing",
+    "description": "",
+    "parent": 13
+  }
+},
+{
+  "model": "products.category",
+  "pk": 16,
+  "fields": {
+    "name": "Appliances",
+    "slug": "appliances",
+    "description": "",
+    "parent": 9
+  }
+},
+{
+  "model": "products.category",
+  "pk": 17,
+  "fields": {
+    "name": "Furniture",
+    "slug": "furniture",
+    "description": "",
+    "parent": 9
+  }
+},
+{
+  "model": "products.productimage",
+  "pk": 4,
+  "fields": {
+    "product": 6,
+    "image": "products/iphone13_q0vMvHQ.avif",
+    "alt_text": ""
+  }
+},
+{
+  "model": "cart.cartitem",
+  "pk": 22,
+  "fields": {
+    "cart": 6,
+    "product": 8,
+    "quantity": 1
+  }
+},
+{
+  "model": "cart.cartitem",
+  "pk": 23,
+  "fields": {
+    "cart": 2,
+    "product": 6,
+    "quantity": 1
+  }
+},
+{
+  "model": "cart.cartitem",
+  "pk": 24,
+  "fields": {
+    "cart": 9,
+    "product": 12,
+    "quantity": 2
+  }
+},
+{
+  "model": "cart.cartitem",
+  "pk": 25,
+  "fields": {
+    "cart": 5,
+    "product": 14,
+    "quantity": 2
+  }
+},
+{
+  "model": "contact.contactmessage",
+  "pk": 3,
+  "fields": {
+    "name": "sj",
+    "email": "hradadiya085@rku.ac.in",
+    "subject": "hii",
+    "message": "hii",
+    "reply": "hii",
+    "status": "replied",
+    "created_at": "2026-02-20T07:22:17.890Z",
+    "replied_at": "2026-04-03T07:02:43.851Z"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 31,
+  "fields": {
+    "order": 38,
+    "product": 8,
+    "seller": 2,
+    "quantity": 1,
+    "price": "1500.00",
+    "product_name": "Boat Rockerz 450",
+    "product_slug": "boat-rockerz-450",
+    "product_image": "/media/products/Boat_Rockerz_450.jpg",
+    "category_name": "Headphones",
+    "sku": "BOAT-450",
+    "item_status": "RECEIVED",
+    "created_at": "2026-04-06T07:48:52.976Z",
+    "updated_at": "2026-04-06T07:48:52.976Z"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 32,
+  "fields": {
+    "order": 39,
+    "product": 12,
+    "seller": 7,
+    "quantity": 2,
+    "price": "23000.00",
+    "product_name": "Wooden Sofa Set",
+    "product_slug": "demo",
+    "product_image": "/media/products/royaloak-india-LhnNn6Eg65w-unsplash.jpg",
+    "category_name": "Furniture",
+    "sku": "",
+    "item_status": "RECEIVED",
+    "created_at": "2026-04-08T10:51:16.524Z",
+    "updated_at": "2026-04-08T10:51:16.524Z"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 33,
+  "fields": {
+    "order": 40,
+    "product": 14,
+    "seller": 2,
+    "quantity": 1,
+    "price": "8500.00",
+    "product_name": "Philips Air Fryer",
+    "product_slug": "philips-air-fryer",
+    "product_image": "/media/products/intan-yuhanis-xky5JGgzwi8-unsplash.jpg",
+    "category_name": "Appliances",
+    "sku": "",
+    "item_status": "PLACED",
+    "created_at": "2026-05-03T07:03:56.559Z",
+    "updated_at": "2026-05-03T07:03:56.559Z"
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 34,
+  "fields": {
+    "order": 41,
+    "product": 12,
+    "seller": 7,
+    "quantity": 2,
+    "price": "23000.00",
+    "product_name": "Wooden Sofa Set",
+    "product_slug": "demo",
+    "product_image": "/media/products/royaloak-india-LhnNn6Eg65w-unsplash.jpg",
+    "category_name": "Furniture",
+    "sku": "",
+    "item_status": "PLACED",
+    "created_at": "2026-05-04T04:34:51.222Z",
+    "updated_at": "2026-05-04T04:34:51.222Z"
+  }
+},
+{
+  "model": "orders.sellertransaction",
+  "pk": 6,
+  "fields": {
+    "seller": 2,
+    "order_item": 31,
+    "amount": "1500.00",
+    "commission": "150.00",
+    "seller_earning": "1350.00",
+    "status": "available",
+    "release_date": "2026-04-06T07:50:22.803Z",
+    "created_at": "2026-04-06T07:50:12.803Z"
+  }
+},
+{
+  "model": "orders.sellertransaction",
+  "pk": 7,
+  "fields": {
+    "seller": 7,
+    "order_item": 32,
+    "amount": "46000.00",
+    "commission": "4600.00",
+    "seller_earning": "41400.00",
+    "status": "available",
+    "release_date": "2026-04-08T11:19:26.255Z",
+    "created_at": "2026-04-08T11:19:16.256Z"
+  }
+},
+{
+  "model": "orders.sellerwallet",
+  "pk": 2,
+  "fields": {
+    "seller": 2,
+    "pending_balance": "0.00",
+    "available_balance": "1423.00",
+    "withdrawn_balance": "17.00"
+  }
+},
+{
+  "model": "orders.sellerwallet",
+  "pk": 3,
+  "fields": {
+    "seller": 7,
+    "pending_balance": "0.00",
+    "available_balance": "39400.00",
+    "withdrawn_balance": "2000.00"
+  }
+},
+{
+  "model": "orders.sellerwithdrawrequest",
+  "pk": 5,
+  "fields": {
+    "seller": 2,
+    "wallet": 2,
+    "amount": "10.00",
+    "status": "approved",
+    "requested_at": "2026-02-20T07:25:58.994Z",
+    "processed_at": "2026-04-03T06:41:41.940Z",
+    "admin_note": "{'admin_note': ''}"
+  }
+},
+{
+  "model": "orders.sellerwithdrawrequest",
+  "pk": 6,
+  "fields": {
+    "seller": 2,
+    "wallet": 2,
+    "amount": "7.00",
+    "status": "approved",
+    "requested_at": "2026-04-03T07:03:45.233Z",
+    "processed_at": "2026-04-03T07:04:20.938Z",
+    "admin_note": "{'admin_note': 'hiii'}"
+  }
+},
+{
+  "model": "orders.sellerwithdrawrequest",
+  "pk": 7,
+  "fields": {
+    "seller": 7,
+    "wallet": 3,
+    "amount": "1000.00",
+    "status": "approved",
+    "requested_at": "2026-05-02T07:47:54.408Z",
+    "processed_at": "2026-05-02T07:48:07.590Z",
+    "admin_note": "{'admin_note': ''}"
+  }
+},
+{
+  "model": "orders.sellerwithdrawrequest",
+  "pk": 8,
+  "fields": {
+    "seller": 7,
+    "wallet": 3,
+    "amount": "1000.00",
+    "status": "approved",
+    "requested_at": "2026-05-04T04:32:42.452Z",
+    "processed_at": "2026-05-04T04:32:51.634Z",
+    "admin_note": "{'admin_note': ''}"
+  }
+},
+{
+  "model": "stores.store",
+  "pk": 1,
+  "fields": {
+    "seller": 2,
+    "name": "Trend Wave",
+    "slug": "my-store",
+    "logo": "store/logo/my_logo.png",
+    "banner": "store/banner/phone.avif",
+    "description": "our goal is customer is the King.",
+    "tagline": "",
+    "support_email": "",
+    "support_phone": "",
+    "rating": "5.00",
+    "total_reviews": 1,
+    "is_verified": false,
+    "created_at": "2026-04-05T07:50:14.925Z"
+  }
+},
+{
+  "model": "stores.store",
+  "pk": 2,
+  "fields": {
+    "seller": 7,
+    "name": "HR Company",
+    "slug": "hr-company",
+    "logo": "",
+    "banner": "",
+    "description": "",
+    "tagline": "",
+    "support_email": "",
+    "support_phone": "",
+    "rating": "5.00",
+    "total_reviews": 1,
+    "is_verified": false,
+    "created_at": "2026-04-08T06:04:27.770Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "d9s0irlcf9rqyijx9u2pfc10sjk886te",
+  "fields": {
+    "session_data": ".eJxVjLsOwjAMAP_FM4pIk7pJR_Z-Q-XYLimgROpjQvw7qtQB1rvTvWGkfcvjvuoyzgI9WLj8skT81HIIeVC5V8O1bMuczJGY065mqKKv29n-DTKtGXpQsegZmVobEK8i1gkycWrd5BMpa6MxREae0uQblK6LXr0GFyNFh_D5Ago4OK0:1vhPzU:JhYqzUd04AjWL0Y5tB3i8Ttc4oHNQWdZiBw7GtuC8QY",
+    "expire_date": "2026-02-01T10:26:40.525Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "rnu2iqbf4fosa0xc8dbpz50mdgcg25ju",
+  "fields": {
+    "session_data": ".eJxVjLsOwjAMAP_FM4pIk7pJR_Z-Q-XYLimgROpjQvw7qtQB1rvTvWGkfcvjvuoyzgI9WLj8skT81HIIeVC5V8O1bMuczJGY065mqKKv29n-DTKtGXpQsegZmVobEK8i1gkycWrd5BMpa6MxREae0uQblK6LXr0GFyNFh_D5Ago4OK0:1vhgpg:ockHwcqLgVryaPgOWda4Q9h9sSwIO7Jo0mPTkR7SHcc",
+    "expire_date": "2026-02-02T04:25:40.156Z"
+  }
+},
+{
+  "model": "users.user",
+  "fields": {
+    "password": "pbkdf2_sha256$1200000$n4PrH1TeBCgDUQa3ShGpr8$XaK22hYP9wngeOCg+Xt65Zwkbz6XnzCZP2cnxqYhrZg=",
+    "last_login": "2026-01-19T04:25:40.154Z",
+    "email": "admin@gmail.com",
+    "full_name": "main admin",
+    "role": "ADMIN",
+    "seller_requested": false,
+    "is_active": true,
+    "is_staff": true,
+    "is_superuser": true,
+    "created_at": "2026-01-18T07:36:13.607Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.user",
+  "fields": {
+    "password": "pbkdf2_sha256$1200000$PIZL5wLNBRl5q4ntjlavfl$oDcs6TbRda3fbwtdKlViIgMcXSOJgMuh6GGLq+ab31E=",
+    "last_login": null,
+    "email": "harsh@gmail.com",
+    "full_name": "harsh",
+    "role": "SELLER",
+    "seller_requested": false,
+    "is_active": true,
+    "is_staff": false,
+    "is_superuser": false,
+    "created_at": "2026-01-18T08:31:53.388Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.user",
+  "fields": {
+    "password": "pbkdf2_sha256$1200000$nUdqMWmWrnKVrARLOvmhEb$aH22PbuCE1nsQ6lqSp8k0lktcnl+8A7xYws/HpTTnSY=",
+    "last_login": null,
+    "email": "demo@gmail.com",
+    "full_name": "demo",
+    "role": "USER",
+    "seller_requested": false,
+    "is_active": true,
+    "is_staff": false,
+    "is_superuser": false,
+    "created_at": "2026-01-19T16:41:34.802Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.user",
+  "fields": {
+    "password": "pbkdf2_sha256$1200000$mujYlQ5LPTMprw5eS7QUQR$nrkgveTtc2nnhoi4Q6v4X1NsqaDKRhYfKYmH49Esvfc=",
+    "last_login": null,
+    "email": "k@gmail.com",
+    "full_name": "ka",
+    "role": "SELLER",
+    "seller_requested": false,
+    "is_active": true,
+    "is_staff": false,
+    "is_superuser": false,
+    "created_at": "2026-01-20T15:04:02.399Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.user",
+  "fields": {
+    "password": "pbkdf2_sha256$1200000$NlVwYAmg3xIJFEyST2Ks5u$U3bfNZGNuNIKvdwIbx3YTmenO6L75Ka4pSxRjeukkU4=",
+    "last_login": null,
+    "email": "j@gmail.com",
+    "full_name": "jay",
+    "role": "SELLER",
+    "seller_requested": false,
+    "is_active": true,
+    "is_staff": false,
+    "is_superuser": false,
+    "created_at": "2026-01-21T06:30:08.679Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.user",
+  "fields": {
+    "password": "pbkdf2_sha256$1200000$QodLhGxK8kGv6dX1WXE3vZ$Pop+WM7exUQ9JrqgUWIZz9TdN/I4+rliMfwVcgxtLtg=",
+    "last_login": null,
+    "email": "jinesh@gmail.com",
+    "full_name": "jinesh",
+    "role": "USER",
+    "seller_requested": false,
+    "is_active": true,
+    "is_staff": false,
+    "is_superuser": false,
+    "created_at": "2026-01-29T07:21:58.423Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.user",
+  "fields": {
+    "password": "pbkdf2_sha256$1200000$PAiRNpJLSkc6pAolSZC51a$5qsHsJDi6ZeersO/kzfIaEoaukQGcFITyZ5HbHgO6aM=",
+    "last_login": null,
+    "email": "demo1@gmail.com",
+    "full_name": "Kathan demo",
+    "role": "USER",
+    "seller_requested": true,
+    "is_active": true,
+    "is_staff": false,
+    "is_superuser": false,
+    "created_at": "2026-01-29T15:57:08.759Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.user",
+  "fields": {
+    "password": "pbkdf2_sha256$1200000$Yz3t5EMaj27ORmufVROJp2$81+Xz1LqXLVSXGecRLzgq5QYhc051AW9SM64yVUuasg=",
+    "last_login": null,
+    "email": "demo2@gmail.com",
+    "full_name": "Kathan Sakhiya",
+    "role": "USER",
+    "seller_requested": false,
+    "is_active": true,
+    "is_staff": false,
+    "is_superuser": false,
+    "created_at": "2026-01-29T15:57:36.769Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.user",
+  "fields": {
+    "password": "pbkdf2_sha256$1200000$eOOVfs2B4WVqs2cIOeuem7$BZS2NboJi/sO5Lkiq/xQnbomHZkZRxdx+eabZ0v+zF0=",
+    "last_login": null,
+    "email": "p@gmail.com",
+    "full_name": "purvang",
+    "role": "USER",
+    "seller_requested": false,
+    "is_active": true,
+    "is_staff": false,
+    "is_superuser": false,
+    "created_at": "2026-04-08T10:44:31.242Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.sellerprofile",
+  "pk": 2,
+  "fields": {
+    "user": [
+      "k@gmail.com"
+    ],
+    "shop_name": "apple",
+    "business_address": "life line",
+    "tax_id": "8475687460",
+    "phone_number": "9601600622",
+    "is_approved": true
+  }
+},
+{
+  "model": "users.sellerprofile",
+  "pk": 3,
+  "fields": {
+    "user": [
+      "j@gmail.com"
+    ],
+    "shop_name": "jay jatt",
+    "business_address": "jkfd ",
+    "tax_id": "43534653",
+    "phone_number": "398475498768",
+    "is_approved": true
+  }
+},
+{
+  "model": "users.sellerprofile",
+  "pk": 6,
+  "fields": {
+    "user": [
+      "demo1@gmail.com"
+    ],
+    "shop_name": "modifix",
+    "business_address": "hii",
+    "tax_id": "234324",
+    "phone_number": "3747856",
+    "is_approved": false
+  }
+},
+{
+  "model": "users.sellerprofile",
+  "pk": 7,
+  "fields": {
+    "user": [
+      "harsh@gmail.com"
+    ],
+    "shop_name": "HR Company",
+    "business_address": "near lifeline hospital , 40 feet ring road, 150 feet ring road om nager circle mavdi ploat, Rajkot",
+    "tax_id": "27AAACM3025E1ZZ",
+    "phone_number": "9601600622",
+    "is_approved": true
+  }
+},
+{
+  "model": "users.useraddress",
+  "pk": 1,
+  "fields": {
+    "user": [
+      "admin@gmail.com"
+    ],
+    "label": "homee",
+    "address_type": "OFFICE",
+    "full_name": "Harsh Radadiya",
+    "phone": "1234567899",
+    "address_line": "near life line hospital, 150 feet ring road, rajkot",
+    "landmark": "sjd",
+    "city": "Rajkot",
+    "state": "Gujarat",
+    "pincode": "360004",
+    "is_default": false,
+    "created_at": "2026-02-14T08:52:35.395Z"
+  }
+},
+{
+  "model": "users.useraddress",
+  "pk": 3,
+  "fields": {
+    "user": [
+      "admin@gmail.com"
+    ],
+    "label": "kath",
+    "address_type": "HOME",
+    "full_name": "kathan",
+    "phone": "1234567899",
+    "address_line": "kbf",
+    "landmark": "",
+    "city": "rj",
+    "state": "hfgo",
+    "pincode": "360004",
+    "is_default": true,
+    "created_at": "2026-02-14T12:47:28.739Z"
+  }
+},
+{
+  "model": "users.useraddress",
+  "pk": 4,
+  "fields": {
+    "user": [
+      "admin@gmail.com"
+    ],
+    "label": "mu",
+    "address_type": "OTHER",
+    "full_name": "vansh",
+    "phone": "239874983579",
+    "address_line": "skhf rfh kd k",
+    "landmark": "",
+    "city": "s",
+    "state": "d",
+    "pincode": "w938u49",
+    "is_default": false,
+    "created_at": "2026-02-14T13:39:25.369Z"
+  }
+},
+{
+  "model": "users.useraddress",
+  "pk": 5,
+  "fields": {
+    "user": [
+      "harsh@gmail.com"
+    ],
+    "label": "my home",
+    "address_type": "HOME",
+    "full_name": "Harsh Radadiya",
+    "phone": "12345678899",
+    "address_line": "near life line hospital, 150 feet ring road, rajkot",
+    "landmark": "",
+    "city": "Rajkot",
+    "state": "Gujarat",
+    "pincode": "360004",
+    "is_default": true,
+    "created_at": "2026-02-16T15:34:08.311Z"
+  }
+},
+{
+  "model": "users.useraddress",
+  "pk": 6,
+  "fields": {
+    "user": [
+      "demo1@gmail.com"
+    ],
+    "label": "demo house",
+    "address_type": "HOME",
+    "full_name": "demo1",
+    "phone": "1234567899",
+    "address_line": "hosue no like line and the demo address",
+    "landmark": "near beach",
+    "city": "mumbai",
+    "state": "maharastra",
+    "pincode": "360004",
+    "is_default": true,
+    "created_at": "2026-02-17T15:47:10.737Z"
+  }
+},
+{
+  "model": "users.useraddress",
+  "pk": 7,
+  "fields": {
+    "user": [
+      "demo2@gmail.com"
+    ],
+    "label": "demo2",
+    "address_type": "HOME",
+    "full_name": "demo2",
+    "phone": "0987654321",
+    "address_line": "place",
+    "landmark": "",
+    "city": "rajkot",
+    "state": "gujarat",
+    "pincode": "360004",
+    "is_default": true,
+    "created_at": "2026-02-18T07:15:07.062Z"
+  }
+},
+{
+  "model": "users.useraddress",
+  "pk": 8,
+  "fields": {
+    "user": [
+      "p@gmail.com"
+    ],
+    "label": "My Villa",
+    "address_type": "HOME",
+    "full_name": "Purvang",
+    "phone": "1234567899",
+    "address_line": "life line hospital mavdi ploat",
+    "landmark": "",
+    "city": "Rajkot",
+    "state": "Gujarat",
+    "pincode": "360004",
+    "is_default": true,
+    "created_at": "2026-04-08T10:50:12.436Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 6,
+  "fields": {
+    "seller": [
+      "k@gmail.com"
+    ],
+    "store": 1,
+    "name": "iPhone 13",
+    "slug": "iphone-13",
+    "description": "Apple smartphone with A15 Bionic chip",
+    "price": "70000.00",
+    "sale_price": "65000.00",
+    "stock": 20,
+    "sku": "IP13-001",
+    "length": "15.00",
+    "width": "7.00",
+    "height": "1.00",
+    "weight": "1.00",
+    "category": 10,
+    "image": "products/iphone13.jpg",
+    "created_at": "2026-04-03T06:56:01.409Z",
+    "tags": []
+  }
+},
+{
+  "model": "products.product",
+  "pk": 7,
+  "fields": {
+    "seller": [
+      "k@gmail.com"
+    ],
+    "store": 1,
+    "name": "Dell Inspiron 15",
+    "slug": "dell-inspiron-15",
+    "description": "Powerful laptop for work and gaming",
+    "price": "55000.00",
+    "sale_price": "52000.00",
+    "stock": 20,
+    "sku": "DELL-INS15",
+    "length": null,
+    "width": null,
+    "height": null,
+    "weight": null,
+    "category": 11,
+    "image": "products/dell-e59Y6vqbL7Y-unsplash.jpg",
+    "created_at": "2026-04-03T06:58:12.091Z",
+    "tags": []
+  }
+},
+{
+  "model": "products.product",
+  "pk": 8,
+  "fields": {
+    "seller": [
+      "k@gmail.com"
+    ],
+    "store": 1,
+    "name": "Boat Rockerz 450",
+    "slug": "boat-rockerz-450",
+    "description": "Wireless Bluetooth headphones",
+    "price": "2000.00",
+    "sale_price": "1500.00",
+    "stock": 19,
+    "sku": "BOAT-450",
+    "length": null,
+    "width": null,
+    "height": null,
+    "weight": null,
+    "category": 12,
+    "image": "products/luke-peterson-lUMj2Zv5HUE-unsplash.jpg",
+    "created_at": "2026-04-03T07:00:24.517Z",
+    "tags": []
+  }
+},
+{
+  "model": "products.product",
+  "pk": 12,
+  "fields": {
+    "seller": [
+      "harsh@gmail.com"
+    ],
+    "store": 2,
+    "name": "Wooden Sofa Set",
+    "slug": "demo",
+    "description": "Comfortable 3-seater wooden sofa",
+    "price": "25000.00",
+    "sale_price": "23000.00",
+    "stock": 16,
+    "sku": "",
+    "length": null,
+    "width": null,
+    "height": null,
+    "weight": null,
+    "category": 17,
+    "image": "products/royaloak-india-LhnNn6Eg65w-unsplash.jpg",
+    "created_at": "2026-04-08T06:59:15.238Z",
+    "tags": [
+      6
+    ]
+  }
+},
+{
+  "model": "products.product",
+  "pk": 13,
+  "fields": {
+    "seller": [
+      "k@gmail.com"
+    ],
+    "store": 1,
+    "name": "LG Microwave Oven",
+    "slug": "lg-microwave-oven",
+    "description": "28L convection microwave oven",
+    "price": "12000.00",
+    "sale_price": "10500.00",
+    "stock": 20,
+    "sku": "",
+    "length": null,
+    "width": null,
+    "height": null,
+    "weight": null,
+    "category": 16,
+    "image": "products/louis-hansel-ktVKZRYUP4Y-unsplash.jpg",
+    "created_at": "2026-04-08T07:32:42.672Z",
+    "tags": [
+      7
+    ]
+  }
+},
+{
+  "model": "products.product",
+  "pk": 14,
+  "fields": {
+    "seller": [
+      "k@gmail.com"
+    ],
+    "store": 1,
+    "name": "Philips Air Fryer",
+    "slug": "philips-air-fryer",
+    "description": "Oil-free air fryer for healthy cooking",
+    "price": "9000.00",
+    "sale_price": "8500.00",
+    "stock": 19,
+    "sku": "",
+    "length": null,
+    "width": null,
+    "height": null,
+    "weight": null,
+    "category": 16,
+    "image": "products/intan-yuhanis-xky5JGgzwi8-unsplash.jpg",
+    "created_at": "2026-04-08T07:33:34.085Z",
+    "tags": []
+  }
+},
+{
+  "model": "products.product",
+  "pk": 15,
+  "fields": {
+    "seller": [
+      "harsh@gmail.com"
+    ],
+    "store": 2,
+    "name": "Office Study Table",
+    "slug": "office-study-table",
+    "description": "Modern study table with storage",
+    "price": "5000.00",
+    "sale_price": null,
+    "stock": 20,
+    "sku": "",
+    "length": null,
+    "width": null,
+    "height": null,
+    "weight": null,
+    "category": 17,
+    "image": "products/minh-pham-IisDPFNUS4k-unsplash.jpg",
+    "created_at": "2026-04-08T09:32:08.213Z",
+    "tags": [
+      6,
+      7
+    ]
+  }
+},
+{
+  "model": "products.product",
+  "pk": 16,
+  "fields": {
+    "seller": [
+      "harsh@gmail.com"
+    ],
+    "store": 2,
+    "name": "Men Cotton T-Shirt",
+    "slug": "men-cotton-t-shirt",
+    "description": "Comfortable cotton round neck t-shirt",
+    "price": "800.00",
+    "sale_price": "700.00",
+    "stock": 20,
+    "sku": "MEN",
+    "length": null,
+    "width": null,
+    "height": null,
+    "weight": null,
+    "category": 14,
+    "image": "products/bao-bao-GREEBEtyR9Y-unsplash.jpg",
+    "created_at": "2026-04-08T09:33:58.831Z",
+    "tags": [
+      4
+    ]
+  }
+},
+{
+  "model": "products.product",
+  "pk": 17,
+  "fields": {
+    "seller": [
+      "harsh@gmail.com"
+    ],
+    "store": 2,
+    "name": "Men Denim Jeans",
+    "slug": "men-denim-jeans",
+    "description": "Slim fit blue denim jeans",
+    "price": "2000.00",
+    "sale_price": "1800.00",
+    "stock": 10,
+    "sku": null,
+    "length": null,
+    "width": null,
+    "height": null,
+    "weight": null,
+    "category": 14,
+    "image": "products/pexels-1242304473-30272904.jpg",
+    "created_at": "2026-04-08T09:37:47.980Z",
+    "tags": [
+      4
+    ]
+  }
+},
+{
+  "model": "products.product",
+  "pk": 18,
+  "fields": {
+    "seller": [
+      "harsh@gmail.com"
+    ],
+    "store": 2,
+    "name": "Women Summer Dress",
+    "slug": "women-summer-dress",
+    "description": "Floral printed casual dress",
+    "price": "1800.00",
+    "sale_price": "1500.00",
+    "stock": 20,
+    "sku": null,
+    "length": null,
+    "width": null,
+    "height": null,
+    "weight": null,
+    "category": 15,
+    "image": "products/pexels-aysegul-aytoren-46790226-36594454.jpg",
+    "created_at": "2026-04-08T09:41:51.844Z",
+    "tags": [
+      6
+    ]
+  }
+},
+{
+  "model": "products.product",
+  "pk": 19,
+  "fields": {
+    "seller": [
+      "harsh@gmail.com"
+    ],
+    "store": 2,
+    "name": "Women Kurti Set",
+    "slug": "women-kurti-set",
+    "description": "Traditional kurti with dupatta",
+    "price": "2500.00",
+    "sale_price": "2000.00",
+    "stock": 20,
+    "sku": null,
+    "length": null,
+    "width": null,
+    "height": null,
+    "weight": null,
+    "category": 15,
+    "image": "products/pexels-neha-mishra-1851906907-28512776.jpg",
+    "created_at": "2026-04-08T09:43:28.868Z",
+    "tags": [
+      7
+    ]
+  }
+},
+{
+  "model": "reviews.review",
+  "pk": 8,
+  "fields": {
+    "product": 14,
+    "user": [
+      "demo1@gmail.com"
+    ],
+    "rating": 4,
+    "comment": "very good quality product with reasonable price as well.",
+    "created_at": "2026-04-08T10:27:55.176Z"
+  }
+},
+{
+  "model": "cart.cart",
+  "pk": 2,
+  "fields": {
+    "user": [
+      "admin@gmail.com"
+    ],
+    "created_at": "2026-01-24T10:18:09.435Z"
+  }
+},
+{
+  "model": "cart.cart",
+  "pk": 3,
+  "fields": {
+    "user": [
+      "harsh@gmail.com"
+    ],
+    "created_at": "2026-01-27T04:52:40.578Z"
+  }
+},
+{
+  "model": "cart.cart",
+  "pk": 4,
+  "fields": {
+    "user": [
+      "jinesh@gmail.com"
+    ],
+    "created_at": "2026-01-29T07:22:16.061Z"
+  }
+},
+{
+  "model": "cart.cart",
+  "pk": 5,
+  "fields": {
+    "user": [
+      "demo2@gmail.com"
+    ],
+    "created_at": "2026-01-29T15:59:25.392Z"
+  }
+},
+{
+  "model": "cart.cart",
+  "pk": 6,
+  "fields": {
+    "user": [
+      "demo1@gmail.com"
+    ],
+    "created_at": "2026-02-11T06:47:13.742Z"
+  }
+},
+{
+  "model": "cart.cart",
+  "pk": 7,
+  "fields": {
+    "user": [
+      "demo@gmail.com"
+    ],
+    "created_at": "2026-02-15T07:40:51.136Z"
+  }
+},
+{
+  "model": "cart.cart",
+  "pk": 8,
+  "fields": {
+    "user": [
+      "k@gmail.com"
+    ],
+    "created_at": "2026-02-15T07:41:37.636Z"
+  }
+},
+{
+  "model": "cart.cart",
+  "pk": 9,
+  "fields": {
+    "user": [
+      "p@gmail.com"
+    ],
+    "created_at": "2026-04-08T10:44:45.135Z"
+  }
+},
+{
+  "model": "wishlist.wishlist",
+  "pk": 45,
+  "fields": {
+    "user": [
+      "harsh@gmail.com"
+    ],
+    "product": 8,
+    "created_at": "2026-04-08T05:47:34.659Z"
+  }
+},
+{
+  "model": "wishlist.wishlist",
+  "pk": 46,
+  "fields": {
+    "user": [
+      "admin@gmail.com"
+    ],
+    "product": 8,
+    "created_at": "2026-04-08T07:25:36.904Z"
+  }
+},
+{
+  "model": "wishlist.wishlist",
+  "pk": 47,
+  "fields": {
+    "user": [
+      "demo1@gmail.com"
+    ],
+    "product": 15,
+    "created_at": "2026-04-08T10:54:23.111Z"
+  }
+},
+{
+  "model": "wishlist.wishlist",
+  "pk": 48,
+  "fields": {
+    "user": [
+      "demo1@gmail.com"
+    ],
+    "product": 19,
+    "created_at": "2026-04-08T10:54:24.316Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 29,
+  "fields": {
+    "user": [
+      "demo1@gmail.com"
+    ],
+    "full_name": "demo1",
+    "phone": "1234567899",
+    "address": "hosue no like line and the demo address",
+    "city": "mumbai",
+    "state": "maharastra",
+    "pincode": "360004",
+    "total_amount": "200.00",
+    "payment_id": "pay_SHGePq0NyiGduF",
+    "payment_method": "RAZORPAY",
+    "payment_status": "PAID",
+    "order_status": "RETURNED",
+    "created_at": "2026-02-17T15:47:43.710Z",
+    "updated_at": "2026-02-17T15:47:43.710Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 30,
+  "fields": {
+    "user": [
+      "demo1@gmail.com"
+    ],
+    "full_name": "demo1",
+    "phone": "1234567899",
+    "address": "hosue no like line and the demo address",
+    "city": "mumbai",
+    "state": "maharastra",
+    "pincode": "360004",
+    "total_amount": "80.00",
+    "payment_id": "pay_SHH5iNcTQBJhGF",
+    "payment_method": "RAZORPAY",
+    "payment_status": "PAID",
+    "order_status": "CANCELLED",
+    "created_at": "2026-02-17T16:13:35.751Z",
+    "updated_at": "2026-02-17T16:13:35.751Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 31,
+  "fields": {
+    "user": [
+      "demo2@gmail.com"
+    ],
+    "full_name": "demo2",
+    "phone": "0987654321",
+    "address": "place",
+    "city": "rajkot",
+    "state": "gujarat",
+    "pincode": "360004",
+    "total_amount": "80.00",
+    "payment_id": null,
+    "payment_method": "COD",
+    "payment_status": "COD_COMPLETE",
+    "order_status": "DELIVERED",
+    "created_at": "2026-02-18T07:15:10.335Z",
+    "updated_at": "2026-02-18T07:15:10.335Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 32,
+  "fields": {
+    "user": [
+      "demo1@gmail.com"
+    ],
+    "full_name": "demo1",
+    "phone": "1234567899",
+    "address": "hosue no like line and the demo address",
+    "city": "mumbai",
+    "state": "maharastra",
+    "pincode": "360004",
+    "total_amount": "160.00",
+    "payment_id": null,
+    "payment_method": "COD",
+    "payment_status": "COD_COMPLETE",
+    "order_status": "DELIVERED",
+    "created_at": "2026-02-18T10:46:26.819Z",
+    "updated_at": "2026-02-18T10:46:26.819Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 33,
+  "fields": {
+    "user": [
+      "demo1@gmail.com"
+    ],
+    "full_name": "demo1",
+    "phone": "1234567899",
+    "address": "hosue no like line and the demo address",
+    "city": "mumbai",
+    "state": "maharastra",
+    "pincode": "360004",
+    "total_amount": "100.00",
+    "payment_id": "pay_SIJc7OA3qgk4SA",
+    "payment_method": "RAZORPAY",
+    "payment_status": "PAID",
+    "order_status": "RETURN_REQUESTED",
+    "created_at": "2026-02-20T07:20:37.495Z",
+    "updated_at": "2026-02-20T07:20:37.495Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 38,
+  "fields": {
+    "user": [
+      "demo1@gmail.com"
+    ],
+    "full_name": "demo1",
+    "phone": "1234567899",
+    "address": "hosue no like line and the demo address",
+    "city": "mumbai",
+    "state": "maharastra",
+    "pincode": "360004",
+    "total_amount": "1500.00",
+    "payment_id": null,
+    "payment_method": "COD",
+    "payment_status": "COD_COMPLETE",
+    "order_status": "DELIVERED",
+    "created_at": "2026-04-06T07:48:52.960Z",
+    "updated_at": "2026-05-02T08:21:04.654Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 39,
+  "fields": {
+    "user": [
+      "p@gmail.com"
+    ],
+    "full_name": "Purvang",
+    "phone": "1234567899",
+    "address": "life line hospital mavdi ploat",
+    "city": "Rajkot",
+    "state": "Gujarat",
+    "pincode": "360004",
+    "total_amount": "46000.00",
+    "payment_id": "pay_SayJESHTXje17z",
+    "payment_method": "RAZORPAY",
+    "payment_status": "PAID",
+    "order_status": "DELIVERED",
+    "created_at": "2026-04-08T10:51:16.515Z",
+    "updated_at": "2026-05-02T08:30:16.321Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 40,
+  "fields": {
+    "user": [
+      "demo2@gmail.com"
+    ],
+    "full_name": "demo2",
+    "phone": "0987654321",
+    "address": "place",
+    "city": "rajkot",
+    "state": "gujarat",
+    "pincode": "360004",
+    "total_amount": "8500.00",
+    "payment_id": null,
+    "payment_method": "COD",
+    "payment_status": "PENDING",
+    "order_status": "PLACED",
+    "created_at": "2026-05-03T07:03:56.550Z",
+    "updated_at": "2026-05-03T07:03:56.550Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 41,
+  "fields": {
+    "user": [
+      "p@gmail.com"
+    ],
+    "full_name": "Purvang",
+    "phone": "1234567899",
+    "address": "life line hospital mavdi ploat",
+    "city": "Rajkot",
+    "state": "Gujarat",
+    "pincode": "360004",
+    "total_amount": "46000.00",
+    "payment_id": null,
+    "payment_method": "COD",
+    "payment_status": "PENDING",
+    "order_status": "PLACED",
+    "created_at": "2026-05-04T04:34:51.214Z",
+    "updated_at": "2026-05-04T04:34:51.214Z"
+  }
+},
+{
+  "model": "orders.ordertracking",
+  "pk": 70,
+  "fields": {
+    "order": 39,
+    "status": "CONFIRMED",
+    "message": "Payment successful — order auto confirmed",
+    "updated_by": [
+      "p@gmail.com"
+    ],
+    "timestamp": "2026-04-08T10:51:16.532Z"
+  }
+},
+{
+  "model": "orders.ordertracking",
+  "pk": 71,
+  "fields": {
+    "order": 39,
+    "status": "PACKED",
+    "message": "Seller updated Wooden Sofa Set to Packed",
+    "updated_by": [
+      "harsh@gmail.com"
+    ],
+    "timestamp": "2026-04-08T11:19:08.439Z"
+  }
+},
+{
+  "model": "orders.ordertracking",
+  "pk": 72,
+  "fields": {
+    "order": 39,
+    "status": "SHIPPED",
+    "message": "Seller updated Wooden Sofa Set to Shipped",
+    "updated_by": [
+      "harsh@gmail.com"
+    ],
+    "timestamp": "2026-04-08T11:19:11.178Z"
+  }
+},
+{
+  "model": "orders.ordertracking",
+  "pk": 73,
+  "fields": {
+    "order": 39,
+    "status": "OUT_FOR_DELIVERY",
+    "message": "Seller updated Wooden Sofa Set to Out For Delivery",
+    "updated_by": [
+      "harsh@gmail.com"
+    ],
+    "timestamp": "2026-04-08T11:19:14.426Z"
+  }
+},
+{
+  "model": "orders.ordertracking",
+  "pk": 74,
+  "fields": {
+    "order": 39,
+    "status": "DELIVERED",
+    "message": "Seller updated Wooden Sofa Set to Delivered",
+    "updated_by": [
+      "harsh@gmail.com"
+    ],
+    "timestamp": "2026-04-08T11:19:16.250Z"
+  }
+},
+{
+  "model": "orders.ordertracking",
+  "pk": 75,
+  "fields": {
+    "order": 39,
+    "status": "RETURN_REQUESTED",
+    "message": "Customer requested return for Wooden Sofa Set",
+    "updated_by": [
+      "p@gmail.com"
+    ],
+    "timestamp": "2026-04-08T11:23:00.637Z"
+  }
+},
+{
+  "model": "orders.ordertracking",
+  "pk": 76,
+  "fields": {
+    "order": 39,
+    "status": "CONFIRMED",
+    "message": "Seller rejected return for Wooden Sofa Set",
+    "updated_by": [
+      "harsh@gmail.com"
+    ],
+    "timestamp": "2026-05-02T08:26:24.853Z"
+  }
+},
+{
+  "model": "orders.ordertracking",
+  "pk": 77,
+  "fields": {
+    "order": 39,
+    "status": "PACKED",
+    "message": "Seller updated Wooden Sofa Set to Packed",
+    "updated_by": [
+      "harsh@gmail.com"
+    ],
+    "timestamp": "2026-05-02T08:30:05.662Z"
+  }
+},
+{
+  "model": "orders.ordertracking",
+  "pk": 78,
+  "fields": {
+    "order": 39,
+    "status": "SHIPPED",
+    "message": "Seller updated Wooden Sofa Set to Shipped",
+    "updated_by": [
+      "harsh@gmail.com"
+    ],
+    "timestamp": "2026-05-02T08:30:07.325Z"
+  }
+},
+{
+  "model": "orders.ordertracking",
+  "pk": 79,
+  "fields": {
+    "order": 39,
+    "status": "OUT_FOR_DELIVERY",
+    "message": "Seller updated Wooden Sofa Set to Out For Delivery",
+    "updated_by": [
+      "harsh@gmail.com"
+    ],
+    "timestamp": "2026-05-02T08:30:08.883Z"
+  }
+},
+{
+  "model": "orders.ordertracking",
+  "pk": 80,
+  "fields": {
+    "order": 39,
+    "status": "DELIVERED",
+    "message": "Seller updated Wooden Sofa Set to Delivered",
+    "updated_by": [
+      "harsh@gmail.com"
+    ],
+    "timestamp": "2026-05-02T08:30:10.199Z"
+  }
+},
+{
+  "model": "orders.ordertracking",
+  "pk": 81,
+  "fields": {
+    "order": 39,
+    "status": "RECEIVED",
+    "message": "Seller updated Wooden Sofa Set to Received",
+    "updated_by": [
+      "harsh@gmail.com"
+    ],
+    "timestamp": "2026-05-02T08:30:16.318Z"
+  }
+},
+{
+  "model": "orders.ordertracking",
+  "pk": 82,
+  "fields": {
+    "order": 40,
+    "status": "PLACED",
+    "message": "Order placed via COD",
+    "updated_by": [
+      "demo2@gmail.com"
+    ],
+    "timestamp": "2026-05-03T07:03:56.567Z"
+  }
+},
+{
+  "model": "orders.ordertracking",
+  "pk": 83,
+  "fields": {
+    "order": 41,
+    "status": "PLACED",
+    "message": "Order placed via COD",
+    "updated_by": [
+      "p@gmail.com"
+    ],
+    "timestamp": "2026-05-04T04:34:51.229Z"
+  }
+},
+{
+  "model": "stores.storereview",
+  "pk": 1,
+  "fields": {
+    "store": 1,
+    "user": [
+      "demo1@gmail.com"
+    ],
+    "rating": 5,
+    "comment": "hii",
+    "created_at": "2026-04-06T08:18:59.178Z"
+  }
+},
+{
+  "model": "stores.storereview",
+  "pk": 2,
+  "fields": {
+    "store": 2,
+    "user": [
+      "p@gmail.com"
+    ],
+    "rating": 5,
+    "comment": "super",
+    "created_at": "2026-05-02T08:31:45.155Z"
+  }
+},
+{
+  "model": "stores.storefollower",
+  "pk": 4,
+  "fields": {
+    "user": [
+      "demo1@gmail.com"
+    ],
+    "store": 1,
+    "created_at": "2026-04-08T10:40:34.669Z"
+  }
+},
+{
+  "model": "stores.storefollower",
+  "pk": 5,
+  "fields": {
+    "user": [
+      "demo1@gmail.com"
+    ],
+    "store": 2,
+    "created_at": "2026-04-08T10:59:34.671Z"
+  }
+},
+{
+  "model": "stores.storefollower",
+  "pk": 6,
+  "fields": {
+    "user": [
+      "p@gmail.com"
+    ],
+    "store": 1,
+    "created_at": "2026-05-04T04:33:58.593Z"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 1,
+  "fields": {
+    "action_time": "2026-01-18T10:27:10.147Z",
+    "user": [
+      "admin@gmail.com"
+    ],
+    "content_type": [
+      "products",
+      "category"
+    ],
+    "object_id": "1",
+    "object_repr": "car",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 2,
+  "fields": {
+    "action_time": "2026-01-18T10:28:56.194Z",
+    "user": [
+      "admin@gmail.com"
+    ],
+    "content_type": [
+      "products",
+      "product"
+    ],
+    "object_id": "1",
+    "object_repr": "white car bmw - harsh",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+}
+]

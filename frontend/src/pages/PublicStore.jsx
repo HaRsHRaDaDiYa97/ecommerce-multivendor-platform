@@ -24,7 +24,7 @@ export default function PublicStore() {
 
   const fetchStoreData = async () => {
     try {
-      const res = await publicApi.get(`/stores/${slug}/`);
+      const res = await publicApi.get(`stores/${slug}/`);
       setStore(res.data);
     } catch (error) {
       toast.error("Store not found");
@@ -35,7 +35,7 @@ export default function PublicStore() {
 
   const fetchStoreProducts = async () => {
     try {
-      const res = await publicApi.get(`/products/items/?store_slug=${slug}`);
+      const res = await publicApi.get(`products/items/?store_slug=${slug}`);
       setProducts(res.data.results || res.data);
     } catch (error) {
       console.error("Failed to load products");
@@ -45,7 +45,7 @@ export default function PublicStore() {
   const handleFollowToggle = async () => {
     if (!isAuthenticated) return toast.info("Please login to follow stores");
     try {
-      const res = await privateApi.post(`/stores/${slug}/follow/`);
+      const res = await privateApi.post(`stores/${slug}/follow/`);
       setIsFollowing(res.data.following);
       toast.success(res.data.message);
     } catch (error) {
@@ -57,7 +57,7 @@ export default function PublicStore() {
     e.preventDefault();
     if (!isAuthenticated) return toast.info("Please login to review");
     try {
-      await privateApi.post(`/stores/${slug}/review/`, {
+      await privateApi.post(`stores/${slug}/review/`, {
         rating: reviewRating,
         comment: reviewText
       });
