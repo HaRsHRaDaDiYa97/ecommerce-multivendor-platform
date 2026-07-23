@@ -22,7 +22,7 @@ export default function SellerLayout() {
 
   ];
 
-  const SidebarContent = () => (
+  const renderSidebarContent = () => (
     <div className="flex flex-col h-full bg-white border-r border-gray-100">
       {/* Brand Section */}
       <div className="h-16 flex items-center px-6 border-b border-gray-50 shrink-0">
@@ -85,7 +85,7 @@ export default function SellerLayout() {
       
       {/* 1. Desktop Sidebar */}
       <aside className={`hidden md:flex flex-col transition-all duration-500 ease-in-out ${isSidebarOpen ? 'w-64' : 'w-20'}`}>
-        <SidebarContent />
+        {renderSidebarContent()}
       </aside>
 
       {/* 2. Mobile Drawer (Overlay + Content) */}
@@ -102,7 +102,7 @@ export default function SellerLayout() {
                 <X size={18} />
              </button>
           </div>
-          <SidebarContent />
+          {renderSidebarContent()}
         </div>
       </div>
 

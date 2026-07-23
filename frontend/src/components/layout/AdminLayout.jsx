@@ -27,7 +27,7 @@ export default function AdminLayout() {
   ];
 
 
-  const SidebarContent = () => (
+  const renderSidebarContent = () => (
     <div className="flex flex-col h-full bg-white border-r border-gray-200">
       {/* Brand Header */}
       <div className="p-6 flex items-center gap-3 border-b border-gray-50 bg-white">
@@ -81,7 +81,7 @@ export default function AdminLayout() {
     <div className="flex h-screen bg-[#FAFAFA] text-slate-900 font-sans">
       {/* Sidebar Desktop */}
       <aside className={`hidden md:flex flex-col transition-all duration-300 ${isOpen ? 'w-72' : 'w-24'}`}>
-        <SidebarContent />
+        {renderSidebarContent()}
       </aside>
 
       {/* Mobile Drawer Overlay */}
@@ -91,10 +91,10 @@ export default function AdminLayout() {
           onClick={() => setIsMobileOpen(false)}
         >
           <div 
-            className="w-72 h-full bg-white animate-slide-in-right"
+            className="w-72 h-full bg-white shadow-2xl animate-in slide-in-from-left duration-300"
             onClick={(e) => e.stopPropagation()}
           >
-            <SidebarContent />
+            {renderSidebarContent()}
           </div>
         </div>
       )}
